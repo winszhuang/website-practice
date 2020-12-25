@@ -1,0 +1,93 @@
+body{
+    margin: 0px;
+}
+nav{
+    height: 80vw;
+    background-image: url(arun.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 20px;
+}
+nav>.title{
+    text-align: center;
+    font-size: 2em;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+nav>.menu{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+nav>.menu>.content{
+    padding: 0px 20px;
+    color: black;
+    text-shadow: 0px 0px 5px white;
+}
+
+nav>.common>.content{
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+nav>.common>.content:hover{
+    transform: scale(1.2,1.2);
+    color: burlywood;
+}
+
+/*第二個畫面----------------------*/
+nav>.menu2{    
+    position: fixed;
+    text-align: center;
+    background-color: rgba(256,256,256,0.7);
+    width: 100%;height: 100%;
+    top: 0px;
+    display: none;
+}
+nav>.menu2>.content{
+    margin: 20px;
+    color: rgb(34, 34, 34);
+}
+nav>.menu2>#x{
+    position: absolute;
+    right: 10px;top: 5px;
+    font-size: 25px;
+    cursor: pointer;
+}
+/*三條線-----------------------*/
+nav>.mobile-menu{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    cursor: pointer;
+}
+nav>.mobile-menu>.line{
+    height: 2px;
+    width: 40px;
+    background-color: rgb(3, 1, 1);
+    margin-bottom: 3px;
+}
+
+
+
+nav>.bigtitle{
+    color: black;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 8vw;
+    letter-spacing: 10px;
+    line-height: 1.25em;
+    margin: 30px 0px; 
+}
+
+
+@media(max-width:800px){
+    nav>.menu{
+        display: none;
+    }
+    nav>.mobile-menu{
+        display: flex;
+    }
+}

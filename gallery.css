@@ -1,0 +1,80 @@
+section{
+    display: flex;justify-content: center;
+    margin: 0px 15px;
+}
+section>.col{
+    width: 400px;
+    margin: 0px 10px;
+    color: white;
+}
+section>.col>.pic{
+    height:600px;
+}
+section>.col>.pic1{
+    background-image: url(clarke.jpg);
+    background-size: cover;
+}
+section>.col>.pic2{
+    background-image: url(Pa.jpg);
+    background-size: cover;
+}
+section>.col>.text{
+    box-sizing: border-box;
+    height: 200px;
+    border: 2px solid black;
+    color: black;
+}
+section>.col>.block{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section>.col>.block{
+    width: 100%;
+}
+section>.col>.block>.title{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 2em;
+}
+section>.col>.block>.story{
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+section>.col>.block>.storyText{
+    font-size: 1.2em;
+    margin: 5px;
+}
+section>.col>.block>.bottom{
+    font-size: 0.5em;
+    height: 2em;
+    width: 7em;
+    border: 1px solid rgb(219, 219, 219);
+    padding:5px 10px;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+section>.col>.block>.bottom:hover{
+    background-color: black;
+}
+@media(max-width:800px){
+    section{
+        flex-wrap: wrap;
+    }
+    section>.col{
+        width: 95%;
+    }
+    section>.col>.pic{
+        height:400px;
+    }
+    section>.col:last-child{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+}
